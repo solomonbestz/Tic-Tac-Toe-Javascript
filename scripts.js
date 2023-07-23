@@ -27,6 +27,7 @@ for(let i = 0; i < 9; i++){
 btn_object.forEach(function(btn){
     btn.addEventListener('click', function (){
         btn.innerText = choice
+        btn.disabled = true
         if(first_play){
             choice = 'O'
             first_play = false
